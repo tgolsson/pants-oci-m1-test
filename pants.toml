@@ -1,0 +1,25 @@
+[GLOBAL]
+
+plugins = [
+    "pants_backend_oci @ git+https://github.com/tgolsson/pants-backends@38ef895cf2939624ee16f8a3c4ed5cde084a7328#egg=pants_backend_oci&subdirectory=pants-plugins/oci",
+]
+
+pants_version = "2.19.0"
+backend_packages = [
+    "pants_backend_oci",
+    "pants.backend.python",
+    "pants.backend.experimental.go",
+    "pants.backend.shell",
+]
+
+
+[source]
+root_patterns = [
+    "src/python/",
+]
+
+[python]
+interpreter_constraints = ['==3.10.*']
+
+[umoci]
+version = "nightly"

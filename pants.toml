@@ -1,7 +1,7 @@
 [GLOBAL]
 
 plugins = [
-    "pants_backend_oci @ git+https://github.com/tgolsson/pants-backends@38ef895cf2939624ee16f8a3c4ed5cde084a7328#egg=pants_backend_oci&subdirectory=pants-plugins/oci",
+    "pants_backend_oci @ git+https://github.com/tgolsson/pants-backends@064c00b67311675971449b51962ce62e766d500d#egg=pants_backend_oci&subdirectory=pants-plugins/oci",
 ]
 
 pants_version = "2.19.0"
